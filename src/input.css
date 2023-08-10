@@ -9,3 +9,36 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
   }
+.hero-image0 {
+    background-image: url("https://www.kit.edu/img/Forschen/header_dossier%20studium_1920p.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 350px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+.hero-image1 {
+    background-image: url("https://www.kit.edu/img/intern/studieren-20181019-CN-01-404.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 600px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+.hero-image2 {
+    background-image: url("https://www.kit.edu/img/intern/forschen-20191008-CN-01-007.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 600px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+.hero-image3 {
+    background-image: url("https://www.kit.edu/img/intern/forschen-20191008-CN-01-007.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 450px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
