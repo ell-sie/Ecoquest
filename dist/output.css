@@ -639,6 +639,14 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.left-\[700px\] {
+  left: 700px;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -688,10 +696,6 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.-mt-80 {
-  margin-top: -20rem;
 }
 
 .mb-10 {
@@ -829,6 +833,10 @@ video {
   height: 300px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .h-\[600px\] {
   height: 600px;
 }
@@ -839,6 +847,18 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-\[700px\] {
+  height: 700px;
 }
 
 .w-\[1000px\] {
@@ -859,6 +879,10 @@ video {
 
 .w-\[600px\] {
   width: 600px;
+}
+
+.w-\[800px\] {
+  width: 800px;
 }
 
 .w-full {
@@ -1209,10 +1233,6 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-rows-5 {
-  grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1735,6 +1755,14 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1843,10 +1871,6 @@ video {
   border-left-width: 1px;
 }
 
-.border-l-8 {
-  border-left-width: 8px;
-}
-
 .border-r {
   border-right-width: 1px;
 }
@@ -1927,19 +1951,27 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
 .bg-green-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+.bg-inherit {
+  background-color: inherit;
 }
 
-.bg-slate-400 {
+.bg-green-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
 }
 
 .decoration-slice {
@@ -2610,7 +2642,7 @@ video {
 }
 
 .hero-image {
-  background-image: url("https://www.kit.edu/img/Forschen/header_dossier%20studium_1920p.jpg");
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/1597284011363-UFJ1QPUKTAL26N4NMQRK/geronimo-giqueaux-1tzpezd7oA8-unsplash.jpg?format=2500w");
   /* The image used */
   background-color: #cccccc;
   /* Used if the image is unavailable */
