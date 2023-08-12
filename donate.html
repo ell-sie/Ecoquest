@@ -48,49 +48,53 @@
           </div>
          </div>
          <div>
-            <div class="flex flex-col gap-5 mx-4 p-5 ">
-              <div><span class="border-b-4 border-green-700 border-spacing-10 py-1">Donate</span></div>
-              <div>You make it possible</div>
-              <div class="border-green-700 border-2 rounded-tr-lg rounded-bl-lg text-gray-700 ">
-                <div class="flex items-end p-2 mx-2 h-8">
-                  <p>Card Number</p>
+            <div class="flex flex-col gap-5 mx-4 p-5 w-[400px]">
+                <div><span class="border-b-4 border-green-700 border-spacing-10 py-1">Donate</span></div>
+                <div>You make it possible</div>
+                <div class="border-green-700 border-2 rounded-tr-lg rounded-bl-lg text-gray-700">
+                    <div class="flex items-end p-2 mx-2 h-8">
+                        <label for="cardNumber">Card Number</label>
+                    </div>
+                    <input type="text" id="cardNumber" class="w-full p-2" required>
                 </div>
-              </div>
-              <div class="border-green-700 border-2 rounded-tr-lg rounded-bl-lg text-gray-700 ">
-                <div class="flex items-end p-2 mx-2 h-8">
-                  <p>Expiration date</p>
+                <div class="border-green-700 border-2 rounded-tr-lg rounded-bl-lg text-gray-700">
+                    <div class="flex items-end p-2 mx-2 h-8">
+                        <label for="expirationDate">Expiration date</label>
+                    </div>
+                    <input type="text" id="expirationDate" class="w-full p-2" required>
                 </div>
-              </div>
-              <div class=" border-green-700 border-2 rounded-tr-lg rounded-bl-lg text-gray-700 ">
-                <div class="flex items-start p-2 mx-2 h-[80px]">
-                  <p>Billing Postal Code</p>
+                <div class="border-green-700 border-2 rounded-tr-lg rounded-bl-lg text-gray-700">
+                    <div class="flex items-start p-2 mx-2 h-[80px]">
+                        <label for="billingPostalCode">Billing Postal Code</label>
+                    </div>
+                    <input type="text" id="billingPostalCode" class="w-full p-2" required>
                 </div>
-              </div>
-              <div class="border-green-700 border-2 rounded-tr-lg rounded-bl-lg text-gray-700 ">
-                <div class="flex items-end p-2 mx-2 h-8">
-                  <p>Amount</p>
+                <div class="border-green-700 border-2 rounded-tr-lg rounded-bl-lg text-gray-700">
+                    <div class="flex items-end p-2 mx-2 h-8">
+                        <label for="amount">Amount</label>
+                    </div>
+                    <input type="number" id="amount" class="w-full p-2" required>
+                </div>
+                <div class="flex justify-between">
+                    <button id="donateButton" class="bg-green-700 text-white flex items-center justify-center p-2 h-6 font-bold">Donate</button>
+                    <p>*required</p>
+                </div>
+                <div class="flex gap-2">
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram text-4xl"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook text-4xl"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-twitter text-4xl"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-square-youtube text-4xl"></i></a>
+                    <a href="https://mastodon.social" target="_blank"><i class="fa-brands fa-square-mastodon text-4xl"></i></a>
                 </div>
             </div>
-            <div class="flex justify-between">
-              <button class="bg-green-700 text-white flex items-center justify-center p-2 h-6 font-bold">Donate</button>
-              <p>*required</p>
-            </div>
-            <div class="flex gap-2">
-              <i class="fa-brands fa-square-instagram text-4xl"></i>
-              <i class="fa-brands fa-square-facebook text-4xl"></i>
-              <i class="fa-brands fa-square-twitter text-4xl"></i>
-              <i class="fa-brands fa-youtube text-4xl"></i>
-              <i class="fa-brands fa-mastodon text-4xl"></i> 
-            </div>        
-          </div>
-      </div>
+        </div>
         </div>
       </div>
     </div>
     <div class=" p-5 mx-4">
         <h1 class="text-4xl font-bold p-5 mx-4">Sharing board</h1>
           <div class="relative inline-block">
-            <img src="https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/43d0b6a8-41de-40f3-be6a-c9a9088b4828/honeybee-wild-animal-insect-welfare-sciece-nature.png" class="w-[800px] h-[400px]">
+            <img src="https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/385f1f9e-2ac1-4082-a382-065b946c6cba/nandhu-kumar-x3KYj_Ya-lw-unsplash.jpg" class="w-[800px] h-[400px]">
           <div class="bg-[#d9d9d9] mx-4 p-5 w-[500px] absolute top-20 left-[700px] bg-opacity-80 rounded text-2xl">
             <h2 class="text-green-700">CONTACT US
             </h2>
@@ -229,6 +233,40 @@
                   return emailRegex.test(email);
               }
           });
+
+          const donateButton = document.getElementById('donateButton');
+    donateButton.addEventListener('click', () => {
+        const cardNumber = document.getElementById('cardNumber').value.trim();
+        const expirationDate = document.getElementById('expirationDate').value.trim();
+        const billingPostalCode = document.getElementById('billingPostalCode').value.trim();
+        const amount = document.getElementById('amount').value.trim();
+
+        if (cardNumber === '' || expirationDate === '' || billingPostalCode === '' || amount === '') {
+            alert('Please fill out all required fields.');
+            return;
+        }
+
+        const isCardValid = isValidCard(cardNumber);
+        if (!isCardValid) {
+            alert('Invalid card information. Please check your card number.');
+            return;
+        }
+
+        // Simulate donation processing...
+        // Clear input fields after donation
+        document.getElementById('cardNumber').value = '';
+        document.getElementById('expirationDate').value = '';
+        document.getElementById('billingPostalCode').value = '';
+        document.getElementById('amount').value = '';
+
+        alert('Thank you for your donation!');
+    });
+
+    function isValidCard(cardNumber) {
+        // Simulate a basic card validation based on the card number length
+        // You can replace this with a more robust validation method.
+        return cardNumber.length === 16;
+    }
       </script>
 </body>
 </html>

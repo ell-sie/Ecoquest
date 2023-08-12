@@ -877,6 +877,30 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[400\] {
+  width: 400;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[600\] {
+  width: 600;
+}
+
+.w-\[600p\] {
+  width: 600p;
+}
+
+.w-\[00px\] {
+  width: 00px;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
