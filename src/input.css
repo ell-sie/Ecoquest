@@ -10,7 +10,7 @@
     background-size: cover; /* Resize the background image to cover the entire container */
   }
 .hero-image0 {
-    background-image: url("https://www.kit.edu/img/Forschen/header_dossier%20studium_1920p.jpg"); /* The image used */
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/1606863986551-T8FSEB9AENPUU159GEDR/image-asset.jpeg?format=2500w"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 350px; /* You must set a specified height */
     background-position: center; /* Center the image */
@@ -18,7 +18,7 @@
     background-size: cover; /* Resize the background image to cover the entire container */
   }
 .hero-image1 {
-    background-image: url("https://www.kit.edu/img/intern/studieren-20181019-CN-01-404.jpg"); /* The image used */
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/da0b1a45-fb14-41dd-b4b8-ecf03d8be265/brandon-enPHTN3OPRw-unsplash.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 600px; /* You must set a specified height */
     background-position: center; /* Center the image */
@@ -34,7 +34,7 @@
     background-size: cover; /* Resize the background image to cover the entire container */
   }
 .hero-image3 {
-    background-image: url("https://www.kit.edu/img/intern/forschen-20191008-CN-01-007.jpg"); /* The image used */
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/1685479658465-40ZLT11MHZB9N5PJGSTX/federico-di-dio-photography-hA0KMPySU8U-unsplash.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 450px; /* You must set a specified height */
     background-position: center; /* Center the image */
