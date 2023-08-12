@@ -829,10 +829,6 @@ video {
   height: 250px;
 }
 
-.h-\[300px\] {
-  height: 300px;
-}
-
 .h-\[400px\] {
   height: 400px;
 }
@@ -1437,10 +1433,6 @@ video {
   gap: 0.75rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
 }
@@ -1451,10 +1443,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-\[250px\] {
-  gap: 250px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1920,11 +1908,6 @@ video {
   border-color: rgb(21 128 61 / var(--tw-border-opacity));
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .bg-\[\#404040\] {
   --tw-bg-opacity: 1;
   background-color: rgb(64 64 64 / var(--tw-bg-opacity));
@@ -1943,11 +1926,6 @@ video {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-green-100 {
@@ -2300,9 +2278,24 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .text-green-700 {
   --tw-text-opacity: 1;
   color: rgb(21 128 61 / var(--tw-text-opacity));
+}
+
+.text-green-950 {
+  --tw-text-opacity: 1;
+  color: rgb(5 46 22 / var(--tw-text-opacity));
+}
+
+.text-red-950 {
+  --tw-text-opacity: 1;
+  color: rgb(69 10 10 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2677,7 +2670,7 @@ video {
 }
 
 .hero-image2 {
-  background-image: url("https://www.kit.edu/img/intern/forschen-20191008-CN-01-007.jpg");
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/1670885597121-K9NG1809FRGB03T4HBCV/Insularis_PhotobyTatianaLeite2.JPG?format=2500w");
   /* The image used */
   background-color: #cccccc;
   /* Used if the image is unavailable */
@@ -2692,7 +2685,7 @@ video {
 }
 
 .hero-image3 {
-  background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/1685479658465-40ZLT11MHZB9N5PJGSTX/federico-di-dio-photography-hA0KMPySU8U-unsplash.jpg");
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/1675192256749-8GTAMUZ5LZ3J6PNTUB57/blog-net-negative-lives-utilitarian-animal-welfare.png?format=2500w");
   /* The image used */
   background-color: #cccccc;
   /* Used if the image is unavailable */

@@ -26,7 +26,7 @@
     background-size: cover; /* Resize the background image to cover the entire container */
   }
 .hero-image2 {
-    background-image: url("https://www.kit.edu/img/intern/forschen-20191008-CN-01-007.jpg"); /* The image used */
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/1670885597121-K9NG1809FRGB03T4HBCV/Insularis_PhotobyTatianaLeite2.JPG?format=2500w"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 600px; /* You must set a specified height */
     background-position: center; /* Center the image */
@@ -34,7 +34,7 @@
     background-size: cover; /* Resize the background image to cover the entire container */
   }
 .hero-image3 {
-    background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/1685479658465-40ZLT11MHZB9N5PJGSTX/federico-di-dio-photography-hA0KMPySU8U-unsplash.jpg"); /* The image used */
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5f04bd57a1c21d767782adb8/1675192256749-8GTAMUZ5LZ3J6PNTUB57/blog-net-negative-lives-utilitarian-animal-welfare.png?format=2500w"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 450px; /* You must set a specified height */
     background-position: center; /* Center the image */
